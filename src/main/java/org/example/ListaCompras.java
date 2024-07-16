@@ -1,17 +1,17 @@
 package org.example;
 
-public class Tarefa {
+public class ListaCompras {
 
-    private Conteudo ementa;
+    private Conteudo conteudo;
 
-    public void setEmenta(Conteudo ementa) {
-        this.ementa = ementa;
+    public void setConteudo(Conteudo conteudo) {
+        this.conteudo = conteudo;
     }
 
-    public String getEmenta() {
-        if (this.ementa == null) {
-            throw new NullPointerException("Disciplina sem ementa");
+    public String getConteudo() {
+        if (this.conteudo == null) {
+            throw new NullPointerException("Lista de Compras sem conteúdo");
         }
-        return this.ementa.getConteudo();
+        return this.conteudo.getConteudo();
     }
 }

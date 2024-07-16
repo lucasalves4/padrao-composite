@@ -3,11 +3,11 @@ package org.example;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Subtarefa extends Conteudo {
+public class Secao extends Conteudo {
 
     private List<Conteudo> conteudos;
 
-    public Subtarefa(String descricao) {
+    public Secao(String descricao) {
         super(descricao);
         this.conteudos = new ArrayList<Conteudo>();
     }
@@ -18,7 +18,7 @@ public class Subtarefa extends Conteudo {
 
     public String getConteudo() {
         String saida = "";
-        saida = "Subtarefa: " + this.getDescricao() + "\n";
+        saida = "Seção: " + this.getDescricao() + "\n";
         for (Conteudo conteudo : conteudos) {
             saida += conteudo.getConteudo();
         }
